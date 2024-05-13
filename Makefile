@@ -26,9 +26,6 @@ submit:
 	docker exec da-spark-master spark-submit --master spark://spark-master:7077 --deploy-mode client ./apps/$(app)
 
 
-submit2:
-	docker exec da-spark-master spark-submit --master spark://spark-master:7077 --deploy-mode client /opt/spark/apps/dist/test-1.0-py3-none-any.whl
-
-submit3:
+submit-alternate:
 	docker exec da-spark-master spark-submit --master spark://spark-master:7077 --deploy-mode client /opt/spark/apps/spark_test.py
 
